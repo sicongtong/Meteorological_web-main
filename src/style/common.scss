@@ -1,0 +1,43 @@
+html, body, #app, .wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#app {
+    display: flex;
+}
+
+.content-box {
+    position: absolute;
+    left: 0; /* 移除了侧边栏后的 left 设置为 0 */
+    right: 0;
+    top: 7vh; /* 保留导航栏的高度 */
+    bottom: 0;
+    padding-bottom: 30px;
+    /* background: radial-gradient(ellipse farthest-corner at 50% 0%, #410D3B, rgb(7, 19, 82), #050C38); */
+    /* 删除背景色 */
+    background-size: cover;
+}
+
+.content {
+    width: auto;
+    height: 100vh;
+    padding: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+/* 去掉 .content-collapse 样式，因为不再需要侧边栏折叠逻辑 */
